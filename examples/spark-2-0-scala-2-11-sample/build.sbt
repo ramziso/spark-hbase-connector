@@ -1,9 +1,9 @@
 import sbt.ExclusionRule
-name := "Spark-2.0-Scala-2.11-Sample"
+name := "test-cv"
 
 version := "1.0"
 
-scalaVersion := "2.11.0"
+scalaVersion := "2.11.12"
 
 libraryDependencies += "org.apache.spark" % "spark-sql_2.11" % "2.0.1" excludeAll(ExclusionRule(organization="joda-time"), ExclusionRule(organization="org.slf4j"), ExclusionRule(organization="com.sun.jersey.jersey-test-framework"), ExclusionRule(organization="org.apache.hadoop"))
 libraryDependencies += "org.apache.spark" % "spark-core_2.11" % "2.0.1" excludeAll(ExclusionRule(organization="joda-time"), ExclusionRule(organization="org.slf4j"), ExclusionRule(organization="com.sun.jersey.jersey-test-framework"), ExclusionRule(organization="org.apache.hadoop"))
